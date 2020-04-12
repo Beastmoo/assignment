@@ -17,6 +17,7 @@
 package com.example.android.navigation
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
@@ -30,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         @Suppress("UNUSED_VARIABLE")
 
+
+
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         drawerLayout = binding.drawerLayout
         val navController = this.findNavController(R.id.myNavHostFragment)
@@ -41,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         return NavigationUI.navigateUp(navController, drawerLayout)
     }
 
+
+
     // TODO (01) Create the new TitleFragment
     // Select File->New->Fragment->Fragment (Blank)
 
@@ -49,5 +54,5 @@ class MainActivity : AppCompatActivity() {
 
     // TODO (03) Use DataBindingUtil.inflate to inflate and return the titleFragment in onCreateView
     // In our new TitleFragment
-    // R.layout.fragment_title
+    // R.layout.TARUC_FOOD
 }
